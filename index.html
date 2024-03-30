@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="MyChildrens" />
+    <meta name="description" content="" />
+    <title>Reddit - MyChildrens</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="header__title">MyChildrens</h1>
+      <nav class="header__nav">
+        <a class="h-nav__a" href="#">Início</a>
+        <a class="h-nav__a" href="#">Sobre</a>
+        <a class="h-nav__a" href="#">Conteúdo</a>
+        <a class="h-nav__a" href="#">Postagens</a>
+        <a class="h-nav__a" href="#">Contato</a>
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <img
+            src="./assets/img/pessoa.jpg"
+            alt="Imagem"
+            width="50"
+            height="50"
+          />
+          <!-- Substitua "imagem.png" pelo caminho da sua imagem -->
+          <div class="dropdown-content">
+            <a href="#">Sair</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- FALTA COLOCAR A OPÇÃO ONDE APARECE A FOTO DE USUÁRIO -->
+    </header>
+
+    <main>
+      <section id="start">
+        <h2 class="start__h2">Your Reddit</h2>
+        <p class="start__p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          inventore a sequi commodi autem in cumque provident, porro odit
+          doloribus.
+        </p>
+
+        <div class="start__search">
+          <input
+            class="s-search__input"
+            type="text"
+            name="pesquisar"
+            id="pesquisar"
+            placeholder="Pesquisar"
+          />
+          <!-- FALTA COLOCAR O ICONE DE PESQUISAR (SEM INTERNET) -->
+
+          <select class="s-search__categoria" id="categoria" name="categoria">
+            <option class="categoria__opcao" value="" disabled>
+              Escolha uma Categoria
+            </option>
+            <option class="categoria__opcao" value="">Superação</option>
+            <option class="categoria__opcao" value="">Motivação</option>
+            <option class="categoria__opcao" value="">Explicação</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="all-content">
+        <div class="reddit">
+          <div class="reddit__header">
+            <img
+              src="./assets/img/pessoa.jpg"
+              alt="imgUser"
+              class="r-header__img"
+            />
+            <p class="r-header__user">Usuário</p>
+          </div>
+
+          <div class="reddit__content">
+            <p class="r-content__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate eum minus, excepturi molestiae minima adipisci incidunt
+              illo doloremque cumque voluptatibus aliquam odit error odio
+              perspiciatis ex ducimus ipsam nobis quae.
+            </p>
+
+            <div class="r-content__tags">
+              <p class="r-content__tags__p">TAG</p>
+              <p class="r-content__tags__p">TAG</p>
+              <p class="r-content__tags__p">TAG</p>
+              <p class="r-content__tags__p">TAG</p>
+              <p class="r-content__tags__p">TAG</p>
+              <p class="r-content__tags__p">TAG</p>
+              <p class="r-content__tags__p">TAG</p>
+            </div>
+          </div>
+
+          <div class="reddit__reaction">
+            <button class="like-button" onclick="toggleLike(this)">
+              <div class="heart"></div>
+              <p class="r-reaction__heart__p">Gostei</p>
+            </button>
+
+            <div class="r-reaction__comment">
+              <i class="fa-solid fa-comment fa-2xl" style="color: #74c0fc"></i>
+              <p class="r-reaction__comment__p">Comentar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
