@@ -67,6 +67,17 @@ header > h1 {
   font: 600 1rem var(--fontsubtitle);
 }
 
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font: 600 1rem var(--fontsubtitle);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -170,6 +181,57 @@ header > h1 {
   font: 500 1rem var(--fontsubtitle);
 }
 
+/* REDDIT MODAL */
+
+.modal {
+  display: none;
+}
+
+.modal.open {
+  border: 0.2px solid black;
+  border-radius: 25px;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2rem;
+  margin: 10rem 0rem 0rem 30rem;
+  z-index: 1000;
+  width: fit-content;
+  height: fit-content;
+  padding: 2rem 2rem 2rem 5rem;
+  background: #f9f9f9;
+}
+
+.modal label {
+  font: 600 1.2rem var(--fonttitle);
+}
+
+.modal input {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  outline: none;
+  border: 0.1px solid #06a0e2;
+}
+
+.modal a {
+  padding: 0.5rem 2rem;
+  background: #06a0e2;
+  border: 1px solid #06a0e2;
+  border-radius: 8px;
+  font: 600 1.2rem var(--fontsubtitle);
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal a:hover {
+  background: #fff;
+  border: 1px solid #06a0e2;
+  color: #06a0e2;
+  transition: 1s;
+}
+
 /* Estilos do botão */
 .like-button {
   cursor: pointer;
@@ -183,20 +245,15 @@ header > h1 {
   transition: transform 0.2s;
 }
 
-.like-button:hover {
-  transform: scale(1.1);
-}
-
 .like-button .heart {
   width: 40px;
   height: 40px;
   background-image: url("/assets/img/reactions/coracao.png"); /* Substitua 'coracao_vazio.png' pelo caminho da sua imagem de coração vazio */
   background-size: cover;
-  transition: background-position 0.4s;
+  transition: 0.4s;
 }
 
 .like-button.clicked .heart {
   background-image: url("/assets/img/reactions/coracaocheio.png"); /* Substitua 'coracao_cheio.png' pelo caminho da sua imagem de coração cheio */
   background-size: cover;
-  background-position: 0 -50px;
 }

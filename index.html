@@ -36,6 +36,7 @@
           <!-- Substitua "imagem.png" pelo caminho da sua imagem -->
           <div class="dropdown-content">
             <a href="#">Sair</a>
+            <button id="criarReddit">Criar um Reddit</button>
           </div>
         </div>
       </nav>
@@ -116,6 +117,29 @@
           </div>
         </div>
       </section>
+
+      <div class="modal" id="modal">
+        <div class="modal__header">
+          <label for="redditTitle">Título do Novo Reddit</label>
+          <input type="text" name="redditInput" id="redditInput" />
+        </div>
+
+        <div class="modal__content">
+          <label for="redditContent">Conteúdo do Reddit</label>
+          <input type="text" name="redditContent" id="redditContent" />
+        </div>
+
+        <div class="modal__tags">
+          <label for="redditTags">Insira as Tags</label>
+          <input
+            type="text"
+            name="redditTag"
+            id="redditTag"
+            placeholder="Ex: Motivação"
+          />
+        </div>
+        <a id="cancelReddit">Cancelar</a>
+      </div>
     </main>
   </body>
 </html>
